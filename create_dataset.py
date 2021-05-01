@@ -1,8 +1,9 @@
 import json
 import random
+import os
 
-!curl https://s3-us-west-2.amazonaws.com/pinafore-us-west-2/qanta-jmlr-datasets/qanta.train.2018.04.18.json > quanta.train.json
-!curl https://s3-us-west-2.amazonaws.com/pinafore-us-west-2/qanta-jmlr-datasets/wikipedia/wiki_lookup.json > wiki_lookup.json
+os.system('curl https://s3-us-west-2.amazonaws.com/pinafore-us-west-2/qanta-jmlr-datasets/qanta.train.2018.04.18.json > quanta.train.json')
+os.system('curl https://s3-us-west-2.amazonaws.com/pinafore-us-west-2/qanta-jmlr-datasets/wikipedia/wiki_lookup.json > wiki_lookup.json')
 
 f = open('quanta.train.json')
 data = json.load(f)['questions']
@@ -25,3 +26,5 @@ for i in range(0, 500):
 
 with open('quanta_psgs.json', 'w') as outfile:
     json.dump(wiki_psgs, outfile)
+with open('quanta_questions.json', 'w') as outfile:
+    json.dump(data[:500], outfile)
