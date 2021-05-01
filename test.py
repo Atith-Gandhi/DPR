@@ -33,7 +33,7 @@ for i in range(0, no_of_test_questions):
     top10_doc = []
     top20_doc = []
 
-    for j in range(0, len(retrieved_examples)):
+    for j in range(0, len(retrieved_examples['title'])):
         
         if retrieved_examples['title'][j].lower() not in top1_doc and len(top1_doc) != 1:
             top1_doc.append(retrieved_examples['title'][j].lower())       
