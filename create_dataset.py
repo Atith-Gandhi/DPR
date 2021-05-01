@@ -2,9 +2,6 @@ import json
 import random
 import os
 
-os.system('curl https://s3-us-west-2.amazonaws.com/pinafore-us-west-2/qanta-jmlr-datasets/qanta.train.2018.04.18.json > quanta.train.json')
-os.system('curl https://s3-us-west-2.amazonaws.com/pinafore-us-west-2/qanta-jmlr-datasets/wikipedia/wiki_lookup.json > wiki_lookup.json')
-
 f = open('quanta.train.json')
 data = json.load(f)['questions']
 random.shuffle(data)
