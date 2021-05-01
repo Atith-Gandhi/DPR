@@ -1,5 +1,5 @@
 import torch
-from transformers import DPRQuestionEncoder, DPRQuestionEncoderTokenizer, DPRQuestionEncoderTokenizerFast
+from transformers import DPRQuestionEncoder, DPRQuestionEncoderTokenizer, DPRQuestionEncoderTokenizerFast, DPRContextEncoder, DPRContextEncoderTokenizerFast
 from datasets import load_dataset
 from tqdm import tqdm
 torch.set_grad_enabled(False)
