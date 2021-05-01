@@ -10,9 +10,10 @@ f = open('wiki_lookup.json')
 wiki = json.load(f)
 wiki = dict((k.lower(),v) for k,v in wiki.items())
 
+no_of_instances = 1000
 wiki_psgs = {'data' : []}
 
-for i in range(0, 500):
+for i in range(0, no_of_instances):
     title = data[i]['page'].lower()
     
     if title in wiki.keys():
@@ -24,4 +25,4 @@ for i in range(0, 500):
 with open('quanta_psgs.json', 'w') as outfile:
     json.dump(wiki_psgs, outfile)
 with open('quanta_questions.json', 'w') as outfile:
-    json.dump(data[:500], outfile)
+    json.dump(data[:no_of_instances], outfile)
