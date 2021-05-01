@@ -26,10 +26,11 @@ Run the below commands in the terminal for running the code:
 | The answer page is in the top 20 retrieved documents | 76.7 %|
 
 ## Conclusion
-- Although, the accuracy of retrieved documents is not that great, however, the aim of DPR was to find positive passages with respect to the question, which it does quite efficiently.
+- Although, the accuracy of retrieved documents is not that great, however, the aim of DPR was to find positive passages with respect to the question, which it does quite accurately.
 - The passages/documents retrieved are usually having similarity with some part of the question and are quite realted to the actual answer/answer page.  For example (for question having Napolean as the answer the top 5 retrieved documents are 'French_Revolution', 'July Revolution', 'Napoleanic Wars', 'Napolean', 'Louis_XVI').
-- When QA models( BertForQuestionAnswering, ElectraForQuestionAnswering, etc.) are applied on the retrieved top 20 documents, most of the times the answer with the highest confidence is usually the actual answer or it contains the actual answer of the question.
-- For now accuracy is only considered when the document is the answer page, however many times when QA models are applied on passages of different documents correct answer is retrieved.
+- For now accuracy is only considered when the document retrieved is same as the answer page, however many times when QA models are applied on passages of different documents correct answer is retrieved.
+- When QA models( BertForQuestionAnswering, ElectraForQuestionAnswering, etc.) are applied on the retrieved top 20 documents, the answer that comes with the highest confidence is usually the actual answer or some part of it contains the actual answer.
+
 
 
 
