@@ -70,4 +70,4 @@ for i in range(0, no_of_test_questions):
 print('Accuracy that the correct document is present in top 1 retrieved Documents: ',page_in_top1/no_of_test_questions )
 print('Accuracy that the correct document is present in top 5 retrieved Documents: ',page_in_top5/no_of_test_questions )
 print('Accuracy that the correct document is present in top 10 retrieved Documents: ',page_in_top10/no_of_test_questions )
-print('Accuracy that the correct document is present in top 10 retrieved Documents: ',page_in_top20/no_of_test_questions )
+print('Accuracy that the correct document is present in top 20 retrieved Documents: ',page_in_top20/no_of_test_questions )
