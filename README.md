@@ -12,9 +12,10 @@ Run the below commands in the terminal for running the code:
 1. sudo apt install libomp-dev
 2. pip install -r requirements.txt
 3. curl https://s3-us-west-2.amazonaws.com/pinafore-us-west-2/qanta-jmlr-datasets/qanta.train.2018.04.18.json > quanta.train.json
-4. python create_dataset.py
-5. python generate_embeddings.py
-6. python test.py
+4. curl https://s3-us-west-2.amazonaws.com/pinafore-us-west-2/qanta-jmlr-datasets/wikipedia/wiki_lookup.json > wiki_lookup.json
+5. python create_dataset.py
+6. python generate_embeddings.py
+7. python test.py
 
 ## Results
 
