@@ -26,7 +26,7 @@ Run the below commands in the terminal for running the code:
 | The answer page is in the top 10 retrieved documents | 68.9% |
 | The answer page is in the top 20 retrieved documents | 76.7 %|
 
-- Although, the accuracy of retrieved documents is not that great, however, the aim of DPR was to find positive passages with respect to the question, which it does quite efficiently. i.e (for question having Napolean as the answer the top 5 retrieved documents are 'French_Revolution', 'July Revolution', 'Napoleanic Wars', 'Napolean', 'Louis_XVI')
+- Although, the accuracy of retrieved documents is not that great, however, the aim of DPR was to find positive passages with respect to the question, which it does quite efficiently. for example (for question having Napolean as the answer the top 5 retrieved documents are 'French_Revolution', 'July Revolution', 'Napoleanic Wars', 'Napolean', 'Louis_XVI')
 -  Also, when a QA model is applied on the retrieved top 20 documents, most of the times the answer with highest confidence usually is the anser or it contains the actual answer of the question.
 
 
