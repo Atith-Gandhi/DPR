@@ -3,7 +3,7 @@
 - The Wikipedia dataset(https://s3-us-west-2.amazonaws.com/pinafore-us-west-2/qanta-jmlr-datasets/wikipedia/wiki_lookup.json) is used as a document set.
 - All the Wikipedia articles are broken into passages of 200 words.
 - Quanta dataset questions differ in the sense that each line of question might be related to different passages. Due to this, the top retrieved passages were somewhat related to the problem statement but many times it doesn't exactly belong to the answer page. 
-- To solve the above problem an average of embeddings for each Wikipedia article is taken and then the nearest neighbor search with respect to the question is done. The averaging of embeddings for each Wikipedia article increases the accuracy by 10-15%.
+- To solve the above problem an average of passage embeddings for each Wikipedia article is taken and then the nearest neighbor search with respect to the question is done. The averaging of embeddings for each Wikipedia article increases the accuracy by 10-15%.
 
 ## Steps to run the code
 
